@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>新規登録</title>
+</head>
+<body>
+<h1>新規登録</h1>
+<p>下記必要項目を入力して新規登録ボタンをクリックしてください。
+
+<form action="/final/C01" method="post">
+<table border="0">
+<tr>
+	<td>ＩＤ:</td>
+	<td><input type="text" name="id" required="required"></td>
+</tr>
+<tr>
+	<td>パスワード：</td>
+	<td><input type="number" name="pass" required="required"></td>
+</tr>
+<tr>
+	<td>名前：</td>
+	<td><input type="text" name="name" required="required"></td>
+</tr>
+<tr>
+	<td>フリガナ：</td>
+	<td><input type="text" name="huri" required="required"></td>
+</tr>
+<tr>
+	<td>年齢：</td>
+	<td><input type="number" name="old" min="0" max="99" required="required"></td>
+</tr>
+<tr>
+	<td>性別：</td>
+	<td>
+	<Label>男：<input type="radio" name="gender" value="男" checked="checked" required="required"></Label>
+	<Label>女：<input type="radio" name="gender" value="女" required="required"></Label><br>
+</td></tr>
+</table>
+<input type="hidden" name="action" value="newregister">
+<input type="submit" value="新規登録"><br><br>
+<a href="/final/login.html">ログインページに戻る</a>
+</form>
+</body>
+</html>

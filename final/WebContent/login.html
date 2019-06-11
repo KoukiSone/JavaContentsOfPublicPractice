@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ログイン画面</title>
+<style>
+.a01{text-align: right;}
+
+
+</style>
+
+</head>
+<body>
+<h1>ログイン画面</h1><!-- この画面にアクセス、ポスト(login)：ログイン、ゲット(new)：新規登録 -->
+<form action="/final/C01" method="post">
+<table border="0">
+<tr>
+	<td>ＩＤ：</td>
+	<td><input type="text" name="id" required="required"></td>
+</tr>
+<tr>
+	<td class="a01">パスワード：</td>
+	<td><input type="number" name="pass" required="required"></td>
+	</table>
+<input type="submit" value="ログイン"><br>
+<input type="hidden" name="action" value="login">
+</form>
+<p>会員登録がまだの方はこちら</p>
+<a href="/final/newregister.html">新規登録</a>
+</body>
+</html>
